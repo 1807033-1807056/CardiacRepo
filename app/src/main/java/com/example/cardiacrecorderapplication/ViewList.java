@@ -36,7 +36,7 @@ public class ViewList extends AppCompatActivity {
         recyclerView=findViewById(R.id.Recycler_view);
         arrayList=new ArrayList<>();
         del=(Button)findViewById(R.id.delete_data);
-        update=(Button)findViewById(R.id.update_data);
+
 
 
         setUserInfo();

@@ -2,7 +2,10 @@ package com.example.cardiacrecorderapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Details_Activity extends AppCompatActivity {
@@ -14,6 +17,7 @@ public class Details_Activity extends AppCompatActivity {
     TextView Diastolic;
     TextView heartRate;
     TextView Age;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,15 @@ public class Details_Activity extends AppCompatActivity {
 
 
         }
+
+                button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
