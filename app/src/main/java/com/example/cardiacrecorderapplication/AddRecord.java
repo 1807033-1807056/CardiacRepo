@@ -18,6 +18,9 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Calendar;
 
+/**
+ * This class adds a new Record to the database
+ */
 public class AddRecord extends AppCompatActivity {
 
     Button add;
@@ -32,7 +35,9 @@ public class AddRecord extends AppCompatActivity {
         setContentView(R.layout.activity_add_record);
         add=findViewById(R.id.button_Add);
 
-
+        /**
+         * Adds a record type object to the database
+         */
         add.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override

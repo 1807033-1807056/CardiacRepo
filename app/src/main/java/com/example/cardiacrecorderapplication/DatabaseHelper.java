@@ -43,6 +43,11 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         db.execSQL(query);
         onCreate(db);
     }
+
+    /**
+     * Adds a record to the database.
+     * @param record
+     */
     public  void AddRecord(Record record)
     {
         ContentValues contentValues=new ContentValues();
@@ -63,6 +68,11 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 
     }
+
+    /**
+     * Fetch all data from database, and returns an arraylist that holds all the data
+     * @return arraylist
+     */
 
 
     public ArrayList<Record> fetchAlldata()
@@ -96,6 +106,11 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return arrayList;
     }
 
+    /**
+     * this method deletes a record from the database
+     * @param Datee
+     * @param Timee
+     */
     public void DeleteData(String Datee, String Timee)
     {
         SQLiteDatabase db=this.getWritableDatabase();
