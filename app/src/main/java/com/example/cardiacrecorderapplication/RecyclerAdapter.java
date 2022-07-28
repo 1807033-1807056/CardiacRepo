@@ -12,6 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+/**
+ * This is a RecyclerAdapter Class that shows the list fetched from database in a recyclerview
+ */
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>  {
 
 
@@ -59,6 +62,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         });
 
     }
+
+    /**
+     * returns the 
+     * @return
+     */
 
     @Override
     public int getItemCount() {

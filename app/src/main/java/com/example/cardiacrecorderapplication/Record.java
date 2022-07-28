@@ -4,6 +4,10 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Date;
 
+/**
+ * Here is a Record class , and the database contains object of this class
+ */
+
 public class Record {
     String name;
     String contactNumber;
