@@ -64,7 +64,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     }
 
     /**
-     * returns the 
+     * returns the
      * @return
      */
 
